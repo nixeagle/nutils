@@ -1,0 +1,7 @@
+#+TITLE: nutils - Nixeagle's utility library
+
+This library is partially for my learning and partially to have a
+consistant utility set across my major projects instead of sporadically
+including various libraries and not requiring even a 10th of the features
+of any given library.
+
