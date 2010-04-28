@@ -1,4 +1,5 @@
 (defpackage #:nixeagle.nutils
   (:use :cl)
   (:nicknames :nutils)
-  (:export #:eval-always))
+  (:export #:eval-always
+           #:ensure-list))

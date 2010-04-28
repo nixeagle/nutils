@@ -4,4 +4,7 @@
   ((:file "packages")
    (:module #:standard
             :components
-            ((:file "declarations")))))
+            ((:file "declarations")
+             (:file "ensure" :depends-on ("declarations"))))))
+
+;;; END
