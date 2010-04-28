@@ -9,7 +9,7 @@
 
 (defun ensure-car (thing)
   "Get the car of THING or return THING if its not a list."
-  #. (declare-speedy)
+  #.(declare-speedy)
   (if (consp thing)
       (car thing)
       thing))

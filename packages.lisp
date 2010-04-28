@@ -2,4 +2,5 @@
   (:use :cl)
   (:nicknames :nutils)
   (:export #:eval-always
-           #:ensure-list))
+           #:ensure-list
+           #:ensure-car))
