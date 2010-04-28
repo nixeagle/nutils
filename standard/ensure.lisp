@@ -41,3 +41,13 @@ When ERRORP is t and a symbol is passed in an error will be signaled."
       (symbol (find-class thing errorp))
       (class thing)
       (t (class-of thing)))))
+
+(defun ensure-string (thing)
+  "Make THING into a string if at all possible."
+  (the (values string &optional)
+    (typecase thing
+      (string thing)
+      (symbol (symbol-name thing))
+      (class (class-name thing))
+      ;; slow, worst case!
+      (t (princ-to-string thing)))))

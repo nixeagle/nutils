@@ -6,4 +6,5 @@
            #:ensure-car
            #:ensure-cdr
            #:ensure-proper-cdr
-           #:ensure-class))
+           #:ensure-class
+           #:ensure-string))
