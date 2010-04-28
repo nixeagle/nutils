@@ -20,3 +20,13 @@
   (when (consp thing)
     (cdr thing)))
 
+(defun ensure-proper-cdr (thing)
+  "Returns cdr of THING (always a list or nil) if its a list or nil.
+
+This differs from `ensure-cdr' because here we make sure the return type
+is a list, so doing things like (ensure-proper-cdr '(1 .1)) will signal a
+`type-error'."
+  #.(declare-speedy :safety 1)
+  (the (values list &optional)
+    (when (consp thing)
+      (cdr thing))))

@@ -4,4 +4,5 @@
   (:export #:eval-always
            #:ensure-list
            #:ensure-car
-           #:ensure-cdr))
+           #:ensure-cdr
+           #:ensure-proper-cdr))
