@@ -30,3 +30,14 @@ is a list, so doing things like (ensure-proper-cdr '(1 .1)) will signal a
   (the (values list &optional)
     (when (consp thing)
       (cdr thing))))
+
+(defun ensure-class (thing &optional errorp)
+  "Returns class of THING or nil.
+
+When ERRORP is t and a symbol is passed in an error will be signaled."
+  #.(declare-speedy)
+  (the (values (or class null) &optional)
+    (typecase thing
+      (symbol (find-class thing errorp))
+      (class thing)
+      (t (class-of thing)))))

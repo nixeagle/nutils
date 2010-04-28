@@ -5,4 +5,5 @@
            #:ensure-list
            #:ensure-car
            #:ensure-cdr
-           #:ensure-proper-cdr))
+           #:ensure-proper-cdr
+           #:ensure-class))
