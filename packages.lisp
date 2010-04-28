@@ -3,4 +3,5 @@
   (:nicknames :nutils)
   (:export #:eval-always
            #:ensure-list
-           #:ensure-car))
+           #:ensure-car
+           #:ensure-cdr))

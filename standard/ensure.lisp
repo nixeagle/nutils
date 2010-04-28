@@ -14,3 +14,9 @@
       (car thing)
       thing))
 
+(defun ensure-cdr (thing)
+  "Returns cdr of thing if its a list, otherwise nil."
+  #.(declare-speedy)
+  (when (consp thing)
+    (cdr thing)))
+
