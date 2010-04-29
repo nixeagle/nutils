@@ -8,7 +8,11 @@
            #:ensure-proper-cdr
            #:ensure-class
            #:ensure-string
-           #:lastcar))
+           #:lastcar
+           #:string-designator
+           #:package-designator
+           #:char-code-designator
+           #:function-designator))
 
 
 (defpackage #:nixeagle.nutils.packages

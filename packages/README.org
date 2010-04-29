@@ -1,0 +1,7 @@
+#:TITLE package utilities
+
+Right now the functions in [[file:types.lisp]] all originate from sbcl's
+deftypes-for-target.lisp. However they are modified and documented to be
+portable across common lisp implementations.
+
+* TODO high level docs

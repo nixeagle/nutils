@@ -5,6 +5,7 @@
    (:module #:standard
             :components
             ((:file "declarations")
+             (:file "types")
              (:file "ensure" :depends-on ("declarations"))))))
 
 ;;; END
