@@ -9,3 +9,8 @@
            #:ensure-class
            #:ensure-string
            #:lastcar))
+
+
+(defpackage #:nixeagle.nutils.packages
+  (:use :cl)
+  (:nicknames :nutils.packages))
