@@ -16,5 +16,6 @@
 
 
 (defpackage #:nixeagle.nutils.packages
-  (:use :cl)
-  (:nicknames :nutils.packages))
+  (:use :cl :nutils)
+  (:nicknames :nutils.packages)
+  (:export #:make-empty-package))
