@@ -4,7 +4,7 @@
   "Valid options for handling existing packages."
   '(member nil :error :supersede))
 
-(defun make-empty-package (package &optional (if-exists :error))
+(defun make-empty-package (package &optional if-exists)
   "Make sure PACKAGE is empty.
 
 IF-EXISTS can be one of three values:
