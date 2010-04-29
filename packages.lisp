@@ -7,4 +7,5 @@
            #:ensure-cdr
            #:ensure-proper-cdr
            #:ensure-class
-           #:ensure-string))
+           #:ensure-string
+           #:lastcar))
