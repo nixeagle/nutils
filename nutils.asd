@@ -6,6 +6,7 @@
             :components
             ((:file "declarations")
              (:file "types")
+             (:file "macros")
              (:file "ensure" :depends-on ("declarations"))))
    (:module #:package
             :components

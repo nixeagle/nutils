@@ -12,7 +12,8 @@
            #:string-designator
            #:package-designator
            #:char-code-designator
-           #:function-designator))
+           #:function-designator
+           #:with-gensyms))
 
 
 (defpackage #:nixeagle.nutils.packages
