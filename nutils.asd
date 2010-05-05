@@ -1,4 +1,5 @@
 (asdf:defsystem :nutils
+  :depends-on (:alexandria)
   :serial t
   :components
   ((:file "packages")
