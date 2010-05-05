@@ -5,10 +5,6 @@
 ;;;
 ;;; These are not a direct copy, documentation and modifications for
 ;;; portability has been done by nixeagle.
-(deftype string-designator ()
-  "Valid arguments to `cl:string'."
-  '(or symbol string character))
-
 (deftype package-designator ()
   "Valid arguments to `cl:find-package'."
   '(or string-designator package))
@@ -22,3 +18,4 @@ This is a range of numbers that have a corresponding character."
 (deftype function-designator ()
   "Funcallable type. Works with `funcall'."
   '(or function symbol))
+
