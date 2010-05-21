@@ -11,7 +11,8 @@
              (:file "ensure" :depends-on ("declarations"))))
    (:module #:binary
             :components
-            ((:file "types")))
+            ((:file "types")
+             (:file "one-liners" :depends-on ("types"))))
    (:module #:package
             :components
             ((:file "basic")))))

@@ -28,7 +28,11 @@
            #:char-code-designator
            #:function-designator
            #:with-gensyms
-           #:octet))
+           #:octet
+           #:make-octet-vector
+           #:signed-octet
+           #:octet-vector
+           #:simple-octet-vector))
 
 
 (defpackage #:nixeagle.nutils.packages
