@@ -9,6 +9,9 @@
              (:file "types")
              (:file "macros")
              (:file "ensure" :depends-on ("declarations"))))
+   (:module #:binary
+            :components
+            ((:file "types")))
    (:module #:package
             :components
             ((:file "basic")))))

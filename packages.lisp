@@ -27,7 +27,8 @@
            #:package-designator
            #:char-code-designator
            #:function-designator
-           #:with-gensyms))
+           #:with-gensyms
+           #:octet))
 
 
 (defpackage #:nixeagle.nutils.packages
