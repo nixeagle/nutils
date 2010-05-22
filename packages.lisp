@@ -32,7 +32,9 @@
            #:make-octet-vector
            #:signed-octet
            #:octet-vector
-           #:simple-octet-vector))
+           #:simple-octet-vector
+           #:declare-speedy-unsafe
+           #:declare-speedy))
 
 
 (defpackage #:nixeagle.nutils.packages
