@@ -19,3 +19,11 @@ This is a range of numbers that have a corresponding character."
   "Funcallable type. Works with `funcall'."
   '(or function symbol))
 
+;;; NOT from alexandria, found I needed this for npdf and seems to be a
+;;; reasonable general purpose type to have defined for anything dealing
+;;; with the lisp pretty printer. [2010-05-24 Mon 11:33]
+(deftype stream-designator ()
+  "Stream type, valid with `write' and friends."
+  '(or stream boolean))
+
+;;; END

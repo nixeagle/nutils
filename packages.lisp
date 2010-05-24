@@ -34,7 +34,8 @@
            #:octet-vector
            #:simple-octet-vector
            #:declare-speedy-unsafe
-           #:declare-speedy))
+           #:declare-speedy
+           #:stream-designator))
 
 
 (defpackage #:nixeagle.nutils.packages
