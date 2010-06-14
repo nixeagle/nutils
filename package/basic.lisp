@@ -22,3 +22,14 @@ IF-EXISTS can be one of three values:
       (:supersede (and (find-package package) (delete-package package))
                   (make-it)))))
 
+(defun shadowing-import-from-all-external-symbols-form (package)
+  "Shadowing-import-from PACKAGE designed to be used with read-eval.
+
+  Call this with #.(shadowing-import-from-all-external-symbols-form ..)"
+  (declare (nutils:package-designator package))
+  (let (list)
+    (do-external-symbols (s package)
+      (push s list))
+    `(:shadowing-import-from package ,@list)))
+
+;;; END
