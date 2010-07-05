@@ -26,4 +26,8 @@ This is a range of numbers that have a corresponding character."
   "Stream type, valid with `write' and friends."
   '(or stream boolean))
 
+(deftype pathname-designator ()
+  "Pathnames are strings or special pathname type."
+  '(or string pathname))
+
 ;;; END

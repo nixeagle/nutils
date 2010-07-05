@@ -36,7 +36,8 @@
            #:declare-speedy-unsafe
            #:declare-speedy
            #:stream-designator
-           #:twos-complement))
+           #:twos-complement
+           #:pathname-designator))
 
 
 (defpackage #:nixeagle.nutils.packages
